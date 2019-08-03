@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+  <title>Cloudtomation</title>
+</h:head>
+
+<h:body>
+  <h1>Cloudtomation</h1>
+  <h2>Jump your tests to the cloud.</h2>
+  <hr/>
+
+  <h:messages />
+
+  <h:form id="regex_validation_form">
+    <h:outputLabel for="regex_field" value="Regular expression: "/>
+    <h:inputText id="regex_field" value="#{appForm.regex}" required="true">
+
+    </h:inputText>
+
+    <h:outputLabel for="text_field" value="Text to validate: "/>
+    <h:inputTextarea id="text_field" value="#{appForm.text}">
+
+    </h:inputTextarea>
+
+    <h:commandButton id="submit" value="Validate" action="#{appForm.submit}"/>
+
+  </h:form>
+</h:body>
+
+</html>
