@@ -1,0 +1,15 @@
+runtime: custom
+env: flex
+
+runtime_config:
+jdk: openjdk8
+
+handlers:
+  - url: /.*
+    script: this field is required, but ignored
+
+manual_scaling:
+  instances: 1
+
+env_variables:
+  JAVA_OPTS: "-Djava.net.preferIPv4Stack=true -Djava.net.preferIPv4Addresses=true"

@@ -91,6 +91,14 @@
         <groupId>io.thorntail</groupId>
         <artifactId>thorntail-maven-plugin</artifactId>
         <version>${io.thorntail.version}</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>package</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
 
       <plugin>
@@ -106,6 +114,18 @@
           </execution>
         </executions>
       </plugin>
+
+      <plugin>
+        <groupId>com.google.cloud.tools</groupId>
+        <artifactId>appengine-maven-plugin</artifactId>
+        <version>2.0.0</version>
+        <configuration>
+          <artifact>${project.build.directory}/${project.build.finalName}-thorntail.jar</artifact>
+          <deploy.projectId>GCLOUD_CONFIG</deploy.projectId>
+          <deploy.version>bleeding-edge</deploy.version>
+        </configuration>
+      </plugin>
+
     </plugins>
 
   </build>
