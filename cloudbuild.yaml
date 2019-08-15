@@ -1,4 +1,4 @@
 steps:
   - name: 'gcr.io/cloud-builders/mvn'
-    args: ['package',
-      'thorntail:package']
+    args: ['clean',
+           'package']
