@@ -2,3 +2,6 @@ steps:
   - name: 'gcr.io/cloud-builders/mvn'
     args: ['clean',
            'package']
+
+  - name: 'gcr.io/cloud-builders/mvn'
+    args: ['appengine:deploy']
