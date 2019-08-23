@@ -77,8 +77,6 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <io.thorntail.version>2.4.0.Final</io.thorntail.version>
-    <io.cucumber.version>4.7.1</io.cucumber.version>
-    <org.seleniumhq.selenium.version>3.141.59</org.seleniumhq.selenium.version>
   </properties>
 
 </project>
