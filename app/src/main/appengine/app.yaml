@@ -2,7 +2,7 @@ runtime: custom
 env: flex
 
 runtime_config:
-jdk: openjdk8
+  jdk: openjdk8
 
 handlers:
   - url: /.*

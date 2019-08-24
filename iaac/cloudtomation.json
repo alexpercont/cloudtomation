@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "cloudtomation",
+  "private_key_id": "8c1eb73f12f08ea83dc78ebfd5078f5f4d7f3f1a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC5Te3wwwWNatU4\nWVoabQ+SOAyda3gkk5a9vVe9DktuNXxhs14EleaoFoATFbG932Zp82DVSxclhF6N\nKwmSee+jw/W+T5a2v9p9imog/Y5OaWOd+NUnDCBuuZRHXtnF2qGYeb8CdQ0Q/FYu\naNHwhnHje2mUlfuxlyFtGEvrNKMY5kdvD2uDRE2aNb0DtpjW7xnqSem/+toJVVft\nGtg9YrjvlPkVDHaPjI2mNnNhu+b+fJhAse6wPMJEzWxcwi193AykR69iDeupdy5Z\n4B/vyd9VJtgriwQeVZSkGDgB01v0PzqbQJ52I+ZTSuNuQ4dA+guC/YXDHtGhWPQH\njCN/bVDHAgMBAAECggEASORy2OaeZIbF4Sik3QhRu774l2QTGrBD99dnkCLzYSMB\nDp20OjGNTkmrj9ZU2M/sRXlLehvTuxpa50UqusfkkJMhM/+y1aialg/At8GGHSov\n2ZBsqLOIfoXZ4klZeQ8LyiL6FElfHnNko1TwYKFCY63EVoK5Q56js3p/QsKt9bjU\nqWxUntcZVKmZPdz57GMPFxii6HwAujsvUvd6aHwP1IP0HdhmsBg2rY41rZohTquD\n+AedZ748m/+f6+cExElEgUkbhSV3Rr8eSpzmCK9vc8FiZyMSmoIwWrLKpH281To/\n1xwpfMIOy/fnazuKu9zfJNf4qY3BL6qypkZ7OxCigQKBgQDgk1o9FjABO5NvbFtT\njTExqq1qPej2SkxvVps0FYL7KaFELfOXOYfIKzXAdVJw0qy4VoufNntnP9TruZm8\nie/6xpOJ/IvHOfVKXDLAn6pP5kF9sIP13dZwhL2pQcRA1jIGTPrCHM/ci8N2f0yx\nREqsWnrR7DXzeZ5751H/YZu/9wKBgQDTO9JvatuTUC+wns1PmhZKfwIfnHSLOe56\nlHHshvsGvAYhezXnJ/QZ1Ge997v47H0wjV2/DrYmmwiCv0pvfXRsUw/47Tlo1SEA\nX8F27lsj1nqukGwgqqmIzkClekQUiLX3jy0wMLLQ9WtZXBZax4C/3HRE2Dxz417F\nVVKN6sdhsQKBgBzZcRc12XbfE2KV9el20uIBfgOO7nVtOAJ5iriXJttjDq92g7ti\njZneSyptJ+kMd1m67HbIhfPOlGiv0BsTUTvS9LMeOUqfnG4wB+kM2dEn0DP4UAtu\nsxSDSOYMZ8y4d3atvuzezKkVX0fCtLR1BG69tNdw08FyVzStk7AN9vcjAoGAYNAZ\nObGbI6BryyJtbR9tOgWOHpjhnXIWyB3DPSn8YXDJyoyi/ugD69a7GYkyoPsawab5\nIXkHqRgDRZGQ9xpjwsYrGub3GgIc1wQMMos6QGmr3tgYhrxRaX9Gh9FK5LJn3CfG\nCUE4o6bn5ZPcNw0bCFRtAaStyFuccwsRBDRn33ECgYAUqLz9Pr4PU3sk5xO7dNxS\n+1QiMW9hgWi9jGCsfvvN3KbkobTgtSgwjsr4BhP5jR8vKXBb71Mm75/6G6QmGN6J\nGPT97/NjI2WR5FPEFhwLkvhxj9xFnERj0vLnxEDx5sQ090FApktboN1fGBPPU/wM\nkPSQCX2m7NFJUySXm/RZkw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "alexservicio@cloudtomation.iam.gserviceaccount.com",
+  "client_id": "113565565742906915180",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/alexservicio%40cloudtomation.iam.gserviceaccount.com"
+}
