@@ -5,7 +5,7 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(glue = "mx.com.percont.cloudtomation.steps",
+@CucumberOptions(glue = "com.epam.workshops.cloudtomation.steps",
   features = "classpath:/features")
 public class ITestRunner {
 
