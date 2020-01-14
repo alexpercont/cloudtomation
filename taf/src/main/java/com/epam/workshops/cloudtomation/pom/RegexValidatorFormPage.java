@@ -1,11 +1,13 @@
 package com.epam.workshops.cloudtomation.pom;
 
 import com.google.inject.Inject;
+import cucumber.runtime.java.guice.ScenarioScoped;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+@ScenarioScoped
 public class RegexValidatorFormPage implements IRegexValidatorForm {
 
   @Inject

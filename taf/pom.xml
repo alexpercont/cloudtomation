@@ -49,7 +49,6 @@
       <groupId>io.cucumber</groupId>
       <artifactId>cucumber-guice</artifactId>
       <version>${io.cucumber.version}</version>
-      <scope>test</scope>
     </dependency>
 
   </dependencies>
