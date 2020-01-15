@@ -2,14 +2,16 @@ package com.epam.workshops.cloudtomation.it;
 
 import com.google.inject.Inject;
 import com.google.inject.Provider;
-import java.net.MalformedURLException;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.net.URL;
+import com.google.inject.Singleton;
+import cucumber.runtime.java.guice.ScenarioScoped;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+
+@Singleton
 public class DriverFactory implements Provider<WebDriver> {
 
   private final Configuration config;

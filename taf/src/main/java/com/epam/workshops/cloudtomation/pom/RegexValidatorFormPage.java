@@ -10,8 +10,11 @@ import org.openqa.selenium.support.PageFactory;
 @ScenarioScoped
 public class RegexValidatorFormPage implements IRegexValidatorForm {
 
+  private final WebDriver driver;
+
   @Inject
   public RegexValidatorFormPage(WebDriver driver){
+    this.driver = driver;
     PageFactory.initElements(driver, this);
   }
 
@@ -52,5 +55,10 @@ public class RegexValidatorFormPage implements IRegexValidatorForm {
   @Override
   public void validate() {
     this.submitButton.click();
+  }
+
+  @Override
+  public WebDriver getDriver() {
+    return this.driver;
   }
 }

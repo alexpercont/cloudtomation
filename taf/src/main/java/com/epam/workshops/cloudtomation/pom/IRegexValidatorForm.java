@@ -1,5 +1,7 @@
 package com.epam.workshops.cloudtomation.pom;
 
+import org.openqa.selenium.WebDriver;
+
 public interface IRegexValidatorForm {
 
   boolean isDisplayed();
@@ -13,4 +15,6 @@ public interface IRegexValidatorForm {
   void setRegex(String regex);
 
   void validate();
+
+    WebDriver getDriver();
 }

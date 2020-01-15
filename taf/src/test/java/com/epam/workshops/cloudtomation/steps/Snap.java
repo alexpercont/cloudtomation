@@ -1,6 +1,8 @@
 package com.epam.workshops.cloudtomation.steps;
 
+import com.epam.workshops.cloudtomation.pom.IRegexValidatorForm;
 import com.google.inject.Inject;
+import cucumber.runtime.java.guice.ScenarioScoped;
 import io.cucumber.core.api.Scenario;
 import io.cucumber.java.After;
 import java.io.File;
@@ -14,13 +16,14 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
+@ScenarioScoped
 public class Snap {
 
   private final WebDriver driver;
 
   @Inject
-  public Snap(WebDriver driver){
-    this.driver = driver;
+  public Snap(IRegexValidatorForm form){
+    this.driver = form.getDriver();
   }
 
   @After(order = Integer.MAX_VALUE)

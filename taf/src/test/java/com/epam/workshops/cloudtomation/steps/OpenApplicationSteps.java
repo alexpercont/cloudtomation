@@ -3,15 +3,15 @@ package com.epam.workshops.cloudtomation.steps;
 import com.epam.workshops.cloudtomation.it.Configuration;
 import com.epam.workshops.cloudtomation.pom.IRegexValidatorForm;
 import com.google.inject.Inject;
+import cucumber.runtime.java.guice.ScenarioScoped;
 import io.cucumber.java.After;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 
-import java.util.Properties;
-
 import static org.junit.Assert.assertTrue;
 
+@ScenarioScoped
 public class OpenApplicationSteps {
 
   private final WebDriver driver;
@@ -21,8 +21,8 @@ public class OpenApplicationSteps {
   private final Configuration config;
 
   @Inject
-  private OpenApplicationSteps(WebDriver driver, IRegexValidatorForm regexValidatorForm, Configuration config){
-    this.driver = driver;
+  public OpenApplicationSteps(IRegexValidatorForm regexValidatorForm, Configuration config){
+    this.driver = regexValidatorForm.getDriver();
     this.validatorForm = regexValidatorForm;
     this.config = config;
   }

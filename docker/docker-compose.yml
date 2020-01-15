@@ -14,6 +14,7 @@ services:
     restart: always
     environment:
       NODE_MAX_INSTANCES: ${chrome_instances}
+      NODE_MAX_SESSION: ${chrome_instances}
       HUB_HOST: hub
       
   node-firefox:
@@ -25,4 +26,5 @@ services:
     restart: always
     environment:
       NODE_MAX_INSTANCES: ${firefox_instances}
+      NODE_MAX_SESSION: ${firefox_instances}
       HUB_HOST: hub

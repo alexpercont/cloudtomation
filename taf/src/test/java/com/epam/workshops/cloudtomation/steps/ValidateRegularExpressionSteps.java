@@ -2,11 +2,13 @@ package com.epam.workshops.cloudtomation.steps;
 
 import com.epam.workshops.cloudtomation.pom.IRegexValidatorForm;
 import com.google.inject.Inject;
+import cucumber.runtime.java.guice.ScenarioScoped;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.WebDriver;
 
 import static org.junit.Assert.assertTrue;
 
+@ScenarioScoped
 public class ValidateRegularExpressionSteps {
 
     private final WebDriver driver;
@@ -14,8 +16,8 @@ public class ValidateRegularExpressionSteps {
     private final IRegexValidatorForm validatorForm;
 
     @Inject
-    public ValidateRegularExpressionSteps(WebDriver driver, IRegexValidatorForm form){
-        this.driver = driver;
+    public ValidateRegularExpressionSteps(IRegexValidatorForm form){
+        this.driver = form.getDriver();
         this.validatorForm = form;
     }
 

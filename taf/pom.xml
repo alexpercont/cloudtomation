@@ -78,6 +78,10 @@
             </goals>
           </execution>
         </executions>
+        <configuration>
+          <parallel>methods</parallel>
+          <threadCount>3</threadCount>
+        </configuration>
       </plugin>
     </plugins>
 
