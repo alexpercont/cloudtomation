@@ -1,0 +1,26 @@
+version: "3"
+services:
+  selenium-grid-hub:
+    image: "selenium/hub"
+    ports:
+      - "4444:4444"
+
+  node-chrome:
+    depends_on:
+      - selenium-grid-hub
+    image: "selenium/node-chrome"
+    links:
+      - selenium-grid-hub:hub
+    restart: always
+    environment:
+      HUB_HOST: hub
+      
+  node-firefox:
+    depends_on:
+      - selenium-grid-hub
+    image: "selenium/node-firefox"
+    links:
+      - selenium-grid-hub:hub
+    restart: always
+    environment:
+      HUB_HOST: hub
