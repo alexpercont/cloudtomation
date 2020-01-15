@@ -7,4 +7,10 @@ public interface IRegexValidatorForm {
   boolean isRegexFieldDisplayed();
 
   boolean isTextFieldDisplayed();
+
+  void setText(String string);
+
+  void setRegex(String regex);
+
+  void validate();
 }

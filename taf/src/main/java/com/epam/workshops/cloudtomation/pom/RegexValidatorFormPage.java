@@ -21,7 +21,7 @@ public class RegexValidatorFormPage implements IRegexValidatorForm {
   @FindBy(id = "regex_validation_form:text_field")
   private WebElement textField;
 
-  @FindBy(id = "regex_validation_form.submit")
+  @FindBy(id = "regex_validation_form:submit")
   private WebElement submitButton;
 
   @Override
@@ -37,5 +37,20 @@ public class RegexValidatorFormPage implements IRegexValidatorForm {
   @Override
   public boolean isTextFieldDisplayed() {
     return textField.isDisplayed();
+  }
+
+  @Override
+  public void setText(String string) {
+    this.textField.sendKeys(string);
+  }
+
+  @Override
+  public void setRegex(String regex) {
+    this.regexField.sendKeys(regex);
+  }
+
+  @Override
+  public void validate() {
+    this.submitButton.click();
   }
 }
