@@ -13,6 +13,7 @@ services:
       - selenium-grid-hub:hub
     restart: always
     environment:
+      NODE_MAX_INSTANCES: ${chrome_instances}
       HUB_HOST: hub
       
   node-firefox:
@@ -23,4 +24,5 @@ services:
       - selenium-grid-hub:hub
     restart: always
     environment:
+      NODE_MAX_INSTANCES: ${firefox_instances}
       HUB_HOST: hub
