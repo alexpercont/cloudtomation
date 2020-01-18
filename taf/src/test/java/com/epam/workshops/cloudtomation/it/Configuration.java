@@ -8,6 +8,7 @@ import java.util.Set;
 public class Configuration {
 
     private static final String TEST_PROPERTIES = "/test.properties";
+    private static final String SNAPSHOT_PATH = "snapshots.path";
     private static final String SUT_URL = "sut.url";
     private static final String WEBDRIVER_URL = "webdriver.url";
     private Properties properties;
@@ -43,5 +44,9 @@ public class Configuration {
 
     public String getUrl(){
         return getProperty(SUT_URL);
+    }
+
+    public String getSnapshotPath(){
+        return getProperty(SNAPSHOT_PATH);
     }
 }

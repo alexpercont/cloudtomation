@@ -1,5 +1,6 @@
 package com.epam.workshops.cloudtomation.steps;
 
+import com.epam.workshops.cloudtomation.it.Configuration;
 import com.epam.workshops.cloudtomation.pom.IRegexValidatorForm;
 import com.google.inject.Inject;
 import cucumber.runtime.java.guice.ScenarioScoped;
@@ -20,10 +21,12 @@ import org.openqa.selenium.WebDriver;
 public class Snap {
 
   private final WebDriver driver;
+  private final Configuration config;
 
   @Inject
-  public Snap(IRegexValidatorForm form){
+  public Snap(IRegexValidatorForm form, Configuration c){
     this.driver = form.getDriver();
+    this.config = c;
   }
 
   @After(order = Integer.MAX_VALUE)
@@ -33,7 +36,7 @@ public class Snap {
       File screenshotAs = takeScreenshotDriver.getScreenshotAs(OutputType.FILE);
       FileSystem fileSystem = FileSystems.getDefault();
       Path p = fileSystem.getPath(screenshotAs.getAbsolutePath());
-      Path desktop = fileSystem.getPath(System.getProperty("user.home")+ "/screenshot_"+ LocalDateTime
+      Path desktop = fileSystem.getPath(config.getSnapshotPath() + "/screenshot_"+ LocalDateTime
           .now().hashCode() + ".png");
       Files.move(p, desktop);
     }
