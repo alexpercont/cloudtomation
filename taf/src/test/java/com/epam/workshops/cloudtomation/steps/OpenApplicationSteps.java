@@ -29,8 +29,7 @@ public class OpenApplicationSteps {
 
   @When("I open the Cloudtomation application")
   public void openApplication() {
-    String appUrl = config.getProperty("sut.url");
-    driver.get(appUrl);
+    driver.get(config.getUrl());
   }
 
   @Then("I see the required fields of the regex validator.")
