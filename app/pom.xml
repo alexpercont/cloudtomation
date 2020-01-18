@@ -67,7 +67,7 @@
         <configuration>
           <artifact>${project.build.directory}/${project.build.finalName}-thorntail.jar</artifact>
           <deploy.projectId>GCLOUD_CONFIG</deploy.projectId>
-          <deploy.version>bleeding-edge</deploy.version>
+          <deploy.version>dev</deploy.version>
         </configuration>
       </plugin>
     </plugins>
