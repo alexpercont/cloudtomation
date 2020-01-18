@@ -1,4 +1,7 @@
 steps:
   - name: 'gcr.io/cloud-builders/mvn'
     args: ['-f',
-           'taf/pom.xml']
+           'taf/pom.xml',
+           '-Dwebdriver.url=http://34.67.219.10:4444/wd/hub',
+           '-Dsut.url=https://cloudtomation.appspot.com'
+    ]
