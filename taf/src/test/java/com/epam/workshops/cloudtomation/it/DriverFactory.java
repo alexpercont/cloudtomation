@@ -34,7 +34,6 @@ public class DriverFactory implements Provider<WebDriver> {
   }
 
   private URL getWebDriverUrl() throws MalformedURLException {
-    String webDriverUrl = this.config.getProperty("webdriver.url");
-    return new URL(webDriverUrl);
+    return new URL(config.getWebDriverUrl());
   }
 }

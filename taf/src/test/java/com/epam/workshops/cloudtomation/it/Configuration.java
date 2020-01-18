@@ -8,6 +8,7 @@ import java.util.Set;
 public class Configuration {
 
     private static final String TEST_PROPERTIES = "/test.properties";
+    private static final String WEBDRIVER_URL = "webdriver.url";
     private Properties properties;
 
     public Configuration() throws IOException {
@@ -35,4 +36,7 @@ public class Configuration {
         return this.properties.getProperty(key, null);
     }
 
+    public String getWebDriverUrl(){
+        return getProperty(WEBDRIVER_URL);
+    }
 }
